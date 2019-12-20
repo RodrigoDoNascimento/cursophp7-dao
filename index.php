@@ -17,9 +17,16 @@ echo json_encode($lista); */
 echo json_encode($search); */
 
 // Carrega um usuário usando o login e a senha
-$usurario = new Usuario();
+/* $usurario = new Usuario();
 $usurario->login("rodrigo", "197538");
-echo $usurario;
+echo $usurario; */
+
+$aluno = new Usuario();
+
+$aluno->setDeslogin("aluno");
+$aluno->setDessenha("@luno0");
+$aluno->insert();
+echo $aluno;
 
 
 ?>
