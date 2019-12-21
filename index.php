@@ -21,10 +21,8 @@ echo json_encode($search); */
 $usurario->login("rodrigo", "197538");
 echo $usurario; */
 
-$aluno = new Usuario();
+$aluno = new Usuario("aluna", "1346");
 
-$aluno->setDeslogin("aluno");
-$aluno->setDessenha("@luno0");
 $aluno->insert();
 echo $aluno;
 

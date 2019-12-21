@@ -117,6 +117,13 @@ class Usuario {
 
     }
 
+    public function __construct($login = "", $password = "") {
+
+        $this->setDeslogin($login);
+        $this->setDessenha($password);
+
+    }
+
     public function __toString() {
 
         return json_encode(array(
