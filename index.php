@@ -21,10 +21,13 @@ echo json_encode($search); */
 $usurario->login("rodrigo", "197538");
 echo $usurario; */
 
-$aluno = new Usuario("aluna", "1346");
-
+// Criando um novo usuário
+/* $aluno = new Usuario("aluna", "1346");
 $aluno->insert();
-echo $aluno;
+echo $aluno; */
 
-
+$usuario = new Usuario();
+$usuario->loadById(3);
+$usuario->update("mariaEduarda", "2012");
+echo $usuario;
 ?>
